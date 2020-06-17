@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#008577</color>
+<color name="colorPrimaryDark">#000000</color>
+<color name="colorAccent">#00FF99</color>
+<color name="joinColor">#ff0066</color>
+<color name="TextColorWhite">#FFFFFF</color>
+<color name="TextColorBlack">#000000</color>
+<color name="Grey">#7A7A7A</color>
+<color name="Translucent">#00FFFFFF</color>
+<color name="selected_color">#00FF99</color>
+<color name="pressed_color">#00FF99</color>
+<color name="focused_color">#00FF99</color>
+<color name="black_overlay">#66000000</color>
+
+</resources>
+
+
+    <!-- <color name="colorPrimaryDark">#102838</color>-->

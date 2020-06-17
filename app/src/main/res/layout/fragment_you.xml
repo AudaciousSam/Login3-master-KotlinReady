@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="org.faith.bebetter.YouPage.YouFragment">
+
+    <View
+        android:id="@+id/viewYourProfile"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:background="@drawable/underline"
+
+        android:contentDescription="@string/backgroundYouFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnMoreFragmentYou"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/btnMoreFragmentYou"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_more_vert_white_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewYourProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewYourProfile" />
+
+    <ImageView
+        android:id="@+id/ivProfilePicFragment"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/profileImage"
+        app:layout_constraintBottom_toBottomOf="@+id/viewYourProfile"
+        app:layout_constraintStart_toStartOf="@+id/viewYourProfile"
+        app:layout_constraintTop_toTopOf="@+id/viewYourProfile"
+        app:srcCompat="@drawable/ic_upload_image" />
+
+    <TextView
+        android:id="@+id/tvProfileNameFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#0000FF99"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/tvSecondary"
+        android:textColor="@color/TextColorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewYourProfile"
+        app:layout_constraintEnd_toStartOf="@+id/btnMoreFragmentYou"
+        app:layout_constraintStart_toEndOf="@+id/ivProfilePicFragment"
+        app:layout_constraintTop_toTopOf="@+id/viewYourProfile" />
+
+    <TextView
+        android:id="@+id/tv_your_friendlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:text="@string/your_closest_friends"
+        android:textColor="@color/TextColorWhite"
+        android:textColorHint="@color/TextColorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewYourProfile" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFriendListYou"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_your_friendlist" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

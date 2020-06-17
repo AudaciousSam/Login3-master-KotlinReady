@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "630011225822",
+    "firebase_url": "https://bebetterlogin.firebaseio.com",
+    "project_id": "bebetterlogin",
+    "storage_bucket": "bebetterlogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630011225822:android:dabbeb0fd33df2b2",
+        "android_client_info": {
+          "package_name": "org.faith.bebetter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630011225822-m2fi69j81aj7sbhcs3e8r14pc9u3qb97.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.faith.bebetter",
+            "certificate_hash": "d2d680ea2ef5681152fa9ce2872d83c418ce9f6b"
+          }
+        },
+        {
+          "client_id": "630011225822-bpbed3vg8pjq1ek7kblqrcl8fem5f211.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBarNbKrhub5sEJ1ITQNXsSqXEolEYH8yQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630011225822-bpbed3vg8pjq1ek7kblqrcl8fem5f211.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
