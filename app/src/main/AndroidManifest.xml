@@ -4,6 +4,7 @@
     package="com.faith.bebetter">
     <!-- Declare features -->
     <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.any" />
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -20,20 +21,20 @@
         android:roundIcon="@mipmap/bebetter_logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="org.faith.bebetter.FullHDActivity"/>
-        <activity android:name="org.faith.bebetter.YouPage.FullHDProfileImageActivity"/>
-        <activity android:name="org.faith.bebetter.NotifsPage.ImagePreviewFromNotification"/>
-        <activity android:name="org.faith.bebetter.YouPage.FullHDProfileActivity"/>
+        <activity android:name="org.faith.bebetter.YouPage.FeedbackActivity"></activity>
+        <activity android:name="org.faith.bebetter.FullHDActivity" />
+        <activity android:name="org.faith.bebetter.YouPage.FullHDProfileImageActivity" />
+        <activity android:name="org.faith.bebetter.NotifsPage.ImagePreviewFromNotification" />
+        <activity android:name="org.faith.bebetter.YouPage.FullHDProfileActivity" />
         <activity android:name="org.faith.bebetter.NotifsPage.CameraActivity" />
         <activity android:name="org.faith.bebetter.FeedPage.ImagePreview" />
         <activity android:name="org.faith.bebetter.YouPage.ProfileActivity" />
-        <activity android:name="org.faith.bebetter.FeedPage.FriendListActivity"
-          />
+        <activity android:name="org.faith.bebetter.FeedPage.FriendListActivity" />
+        <activity android:name="org.faith.bebetter.ExperiencePage.ExperienceFragment" />
         <activity android:name="org.faith.bebetter.YouPage.UpdateEmail" />
         <activity android:name="org.faith.bebetter.YouPage.UpdatePassword" />
         <activity android:name="org.faith.bebetter.YouPage.UpdateInfo" />
-        <activity android:name="org.faith.bebetter.NotifsPage.NotificationFriendListActivity"
-         />
+        <activity android:name="org.faith.bebetter.NotifsPage.NotificationFriendListActivity" />
         <activity android:name="org.faith.bebetter.LoginAndUserCreation.PasswordActivity" />
 
         <service
@@ -48,17 +49,16 @@
             android:name="org.faith.bebetter.MainActivity"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
-                <action android:name="BeBetter_TARGET_NOTIFICATION">
-                </action>
+                <action android:name="BeBetter_TARGET_NOTIFICATION"></action>
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name="org.faith.bebetter.LoginAndUserCreation.LoginActivity" />
-        <activity android:name="org.faith.bebetter.LoginAndUserCreation.RegistrationActivity"
-            >
+        <activity android:name="org.faith.bebetter.LoginAndUserCreation.RegistrationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

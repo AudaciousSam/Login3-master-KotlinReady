@@ -245,7 +245,6 @@ public class ImagePreviewFromNotification extends AppCompatActivity {
         startActivity(intentFurther);
     }
 
-
     public void uploadImage(){
 
         //For uploading the thumbnailImage
@@ -291,31 +290,22 @@ public class ImagePreviewFromNotification extends AppCompatActivity {
                             public void onDataChange(DataSnapshot snapshot) {
                                 if (snapshot.hasChild("lastImage")){
 
-                                    // Now we add the link to the Experience.
+                        // Now we add the link to the Experience.
                         Map<String, Object> childThumbnailUpdates = new HashMap<>();
-
                         childThumbnailUpdates.put("firstImage",  snapshot.child("lastImage").getValue());
                         childThumbnailUpdates.put("lastImage", uri.toString());
-
                         FirebaseDatabase.getInstance().getReference().child("Experiences").child(experienceKey).updateChildren(childThumbnailUpdates);
 
                                 } else {
                                     FirebaseDatabase.getInstance().getReference().child("Experiences").child(experienceKey).child("lastImage").setValue(uri.toString());
                                 }
-
-//                                FirebaseDatabase.getInstance().getReference().child("Experiences").child(experienceKey).child("firstImage").setValue(snapshot.getValue());
-//                                FirebaseDatabase.getInstance().getReference().child("Experiences").child(experienceKey).child("lastImage").setValue(uri.toString());
                             }
 
                             @Override
                             public void onCancelled(@NonNull DatabaseError databaseError) {
 
-//                                FirebaseDatabase.getInstance().getReference().child("Experiences").child(experienceKey).child("lastImage").setValue(uri.toString());
                             }
                         });
-
-
-//
 
                         //Add timestamp and image_thumbnail link.
                         HashMap<String, Object> dataMapFeed = new HashMap<>();

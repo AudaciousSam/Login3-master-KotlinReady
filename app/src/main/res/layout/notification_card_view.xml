@@ -16,6 +16,7 @@
         android:layout_marginBottom="1dp"
         android:contentDescription="@string/imageFriends"
         android:foreground="@drawable/translucent_square"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

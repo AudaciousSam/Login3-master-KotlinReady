@@ -106,5 +106,6 @@
     <string name="deleteProfileImage">TODO</string>
     <string name="search">Search</string>
     <string name="friendslist_and_you_ll_be_able_to_invite_them_from_here">FriendsList. You\'ll be able to invite your closest friends from here.</string>
+    <string name="feedback">Feedback</string>
 
 </resources>

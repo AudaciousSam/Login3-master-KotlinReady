@@ -194,6 +194,9 @@ public class YouFragment extends Fragment {
                             case R.id.logoutMenu:
                                 firebaseAuth.signOut();
                                 startActivity(new Intent(getActivity(), LoginActivity.class));
+                            case R.id.feedbackMenu:
+                                startActivity(new Intent(getActivity(), FeedbackActivity.class));
+
 
                                 return true;
                             default:

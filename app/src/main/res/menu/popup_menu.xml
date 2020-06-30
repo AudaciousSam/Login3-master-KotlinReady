@@ -13,5 +13,9 @@
         android:id="@+id/logoutMenu"
         android:title="@string/logout"/>
 
+    <item
+        android:id="@+id/feedbackMenu"
+        android:title="@string/feedback"/>
+
 
 </menu>

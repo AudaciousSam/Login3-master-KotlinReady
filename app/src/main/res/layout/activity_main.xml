@@ -10,12 +10,14 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/main_tabPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_tabs"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/main_tabs"
@@ -29,7 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:tabBackground="@color/TextColorBlack"
         app:tabGravity="fill"
-        app:tabIndicatorColor="@color/TextColorBlack"
+        app:tabIndicatorColor="@color/bebetter_logo_background"
+        app:tabIndicatorFullWidth="true"
         app:tabIndicatorGravity="bottom"
         app:tabPaddingEnd="0dp"
         app:tabPaddingStart="0dp"

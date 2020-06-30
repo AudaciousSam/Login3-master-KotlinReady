@@ -68,11 +68,16 @@ public class MainActivity extends AppCompatActivity {
         mViewPager.setAdapter(mSectionsPagerAdapter);
         mTabLayout = findViewById(R.id.main_tabs);
         mTabLayout.setupWithViewPager(mViewPager);
+//        mTabLayout.getTabAt(0).setIcon(R.drawable.ic_notifications_none_white_50dp);
+//        mTabLayout.getTabAt(1).setIcon(R.drawable.ic_people_alt_white24px);
+//        mTabLayout.getTabAt(2).setIcon(R.drawable.photo_camera_white_48dp);
+//        mTabLayout.getTabAt(3).setIcon(R.drawable.ic_search__white_50px);
+//        mTabLayout.getTabAt(4).setIcon(R.drawable.ic_person_outline_white_50dp);
+
         mTabLayout.getTabAt(0).setIcon(R.drawable.ic_notifications_none_white_50dp);
         mTabLayout.getTabAt(1).setIcon(R.drawable.ic_people_alt_white24px);
         mTabLayout.getTabAt(2).setIcon(R.drawable.ic_search__white_50px);
         mTabLayout.getTabAt(3).setIcon(R.drawable.ic_person_outline_white_50dp);
-
 
         //CHANGE ICON COLORS
         mTabLayout.setOnTabSelectedListener(
@@ -99,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
-        mViewPager.setOffscreenPageLimit(4);
+        mViewPager.setOffscreenPageLimit(5);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
