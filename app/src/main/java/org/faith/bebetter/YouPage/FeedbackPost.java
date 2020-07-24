@@ -7,6 +7,10 @@ public class FeedbackPost {
 
     public FeedbackPost(){}
 
+    public String getUser() {return user;}
+    public String getTitle() {return title;}
+    public String getText() {return text;}
+
     public FeedbackPost(String user, String title, String text){
        this.user = user;
        this.title = title;

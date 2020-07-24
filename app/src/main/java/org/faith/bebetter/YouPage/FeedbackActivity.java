@@ -1,15 +1,17 @@
 package org.faith.bebetter.YouPage;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.faith.bebetter.R;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -30,7 +32,6 @@ public class FeedbackActivity extends AppCompatActivity {
         Title = (EditText) findViewById(R.id.editSubmitFeedbackHeader);
         Text = (EditText) findViewById(R.id.editSubmitFeedbackText);
 
-
         submitFeedback.setOnClickListener(view -> submitFeedback(Title.getText().toString(),Text.getText().toString()));
     }
 
@@ -39,6 +40,14 @@ public class FeedbackActivity extends AppCompatActivity {
 
        firebaseAuth = FirebaseAuth.getInstance();
        String current_user_id = Objects.requireNonNull(firebaseAuth.getCurrentUser()).getUid();
-       feedbackDatabase.push().setValue(new FeedbackPost(current_user_id,title, text));
+       feedbackDatabase.push().setValue(new FeedbackPost(current_user_id,title, text))
+        .addOnSuccessListener(aVoid -> {
+            Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.feedbackToastSuccess), Toast.LENGTH_SHORT);
+            toast.show();
+        })
+        .addOnFailureListener(e -> {
+            Toast toast = Toast.makeText(getApplicationContext(), getString(R.string.feedbackToastFailure), Toast.LENGTH_SHORT);
+            toast.show();
+        });
    }
 }

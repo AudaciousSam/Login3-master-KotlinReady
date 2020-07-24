@@ -114,5 +114,8 @@
     <string name="submitFeedBackHeaderHint">What does your feedback concern?</string>
     <string name="submitFeedBackTextHint">Feedback goes here</string>
     <string name="feedbackSubmit">Submit</string>
+    <string name="feedbackToastSuccess">Feedback submitted</string>
+    <string name="feedbackToastFailure">Feedback was not submitted</string>
+
 
 </resources>
