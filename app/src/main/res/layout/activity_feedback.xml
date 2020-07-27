@@ -4,17 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".YouPage.FeedbackActivity">
+    android:background="@color/colorPrimaryDark"
+    tools:context="org.faith.bebetter.YouPage.FeedbackActivity">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="278dp"
-        android:layout_height="215dp"
-        android:gravity="center"
-        android:text="Feedback Hub Coming Soon..."
+        android:id="@+id/submitFeedBack"
+        android:layout_width="187dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/submitFeedBack"
+        android:textColor="@color/TextColorWhite"
+
+        android:textColorHint="@color/TextColorWhite"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editSubmitFeedbackHeader"
+        android:layout_width="267dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/feedbackSubmitHeader"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/TextColorWhite"
+        android:textColorHint="@color/TextColorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitFeedBack" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="@string/submitFeedBackHeaderHint"
+        android:textColor="@color/TextColorWhite"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSubmitFeedbackHeader" />
+
+    <EditText
+        android:id="@+id/editSubmitFeedbackText"
+        android:layout_width="267dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="88dp"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:maxLines="11"
+        android:gravity="top"
+        android:background="@drawable/feedback_edit_text_border"
+        android:importantForAutofill="no"
+        android:textColor="@color/TextColorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSubmitFeedbackHeader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/submitFeedBackTextHint"
+        android:textColor="@color/TextColorWhite"
+        android:textSize="12sp"
+        android:labelFor="@+id/editSubmitFeedbackText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSubmitFeedbackText" />
+
+    <Button
+        android:id="@+id/btnFeedbackSubmit"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/outline_green_round"
+        android:text="@string/feedbackSubmit"
+        android:textColor="@color/TextColorWhite"
+        android:textColorHint="@color/TextColorWhite"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

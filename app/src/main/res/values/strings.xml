@@ -108,4 +108,14 @@
     <string name="friendslist_and_you_ll_be_able_to_invite_them_from_here">FriendsList. You\'ll be able to invite your closest friends from here.</string>
     <string name="feedback">Feedback</string>
 
+    <!-- Feedback fields -->
+    <string name="submitFeedBack">Submit feedback</string>
+    <string name="feedbackSubmitHeader">Title</string>
+    <string name="submitFeedBackHeaderHint">What does your feedback concern?</string>
+    <string name="submitFeedBackTextHint">Feedback goes here</string>
+    <string name="feedbackSubmit">Submit</string>
+    <string name="feedbackToastSuccess">Feedback submitted</string>
+    <string name="feedbackToastFailure">Feedback was not submitted</string>
+
+
 </resources>
